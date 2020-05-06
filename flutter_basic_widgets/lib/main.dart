@@ -2,34 +2,34 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
+void answerQuestion() {
+  print('Anser CHoosen!');
+}
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var questions = [
+      'What\'s is your favorite color?',
+      'What\'s is your favorite aniaml?',
+    ];
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: Text('My First App'),
         ),
-        body: Text('This is default Text'),
+        body: Column(
+          children: <Widget>[
+            Text('The question!'),
+            RaisedButton(child: Text('Answer 1'), onPressed: answerQuestion),
+            RaisedButton(child: Text('Answer 2'), onPressed: null),
+            RaisedButton(child: Text('Answer 3'), onPressed: null),
+          ],
+        ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
