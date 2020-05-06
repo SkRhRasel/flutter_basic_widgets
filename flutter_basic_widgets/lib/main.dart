@@ -16,6 +16,69 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+class Person{
+  String name = 'Rasel';
+  int age = 30;
+  
+  Person({this.name, this.age = 30});
+  /*
+  Person(String inputName, int age){
+    name = inputName;
+    this.age = age;
+  }
+  */
+  
+}
+
+double addNumbers(double num1, double num2){
+  return num1 + num2;
+}
+
+
+
+void main() {
+  /*
+  var p1 = person();
+  var p2 = person();
+  
+  p2.name = 'Hasan';
+  print(p1.name);
+  print(p2.name);
+  */
+  print('---------------------------');
+  var p1 = Person(name: 'SK');
+  var p2 = Person(age: 27, name: 'Nasir');
+  
+  print(p1.name);
+  print(p1.age);
+  print(p2.name);
+  print(p2.age);
+  
+  print('---------------------------');
+  double addResult = addNumbers(1,1);
+  print(addResult +1);
+}
+
+
+*/
+
 /* import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
